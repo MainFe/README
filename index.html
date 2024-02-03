@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!--
+    브라우저 정책에 의해 video와 audio가 자동재생되는 건,
+    사용자 경험에 좋지 않다는 이유로 정지되었다.
+
+    // 파이어 폭스 비교
+
+    . 광과민성 발작을 일으킬 수 있는 영상, 음란물, 폭력, 혐오, 공포가 포함된 영상 등이 자동 재생 되어
+    원치 않게 보게되는 문제가 있었다.
+    , 원치 않게 데이터가 소모되어, 특히 개발도상국에서 큰 문제가 있었다.
+
+    가격은 90만원.. 100Mbps.. 그래서 제한된 인터넷 사용. 외곽에 있을수록 더 비쌈.
+    https://인터넷-속도-측정
+  
+    GIF 사용을 멈춰주세요!
+    https://medium.com/vingle-tech-blog/stop-using-gif-as-animation-3c6d223fd35a
+
+    mp4 to gif 용량 비교
+  -->
+  <video src="video.mp4" autoplay controls muted></video>
+  <audio muted autoplay controls>
+    <source src="music.mp3" type="audio/mp3">
+  </audio>
+  <hr>
+  <video src="video.mp4" autoplay controls></video>
+  <audio autoplay controls id="myAudio">
+    <source src="music.mp3" type="audio/mp3">
+  </audio>
+</body>
+</html>
